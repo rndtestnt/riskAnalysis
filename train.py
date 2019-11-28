@@ -39,8 +39,8 @@ if __name__ == "__main__":
     mlflow.set_experiment('experiment1')
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
-
-    # The predicted column is "progression" which is a quantitative measure of disease progression one year after baseline
+    
+    #Predict PD
     train_x = train.drop(["PD"], axis=1)
     test_x = test.drop(["PD"], axis=1)
     train_y = train[["PD"]]
