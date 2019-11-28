@@ -1,6 +1,6 @@
-name: test2
+name: tutorial
 channels:
-  - defaults
+  - experiment3
 dependencies:
   - numpy=1.14.3
   - pandas=0.22.0
