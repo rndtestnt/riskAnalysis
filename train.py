@@ -36,7 +36,7 @@ def eval_metrics(actual, pred):
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
-    mlflow.set_experiment('experiment4')
+    mlflow.set_experiment('test2')
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
 
