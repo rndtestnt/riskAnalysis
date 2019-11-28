@@ -32,14 +32,14 @@ def eval_metrics(actual, pred):
     mae = mean_absolute_error(actual, pred)
     r2 = r2_score(actual, pred)
     return rmse, mae, r2
-
+#new
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
     mlflow.set_experiment('experiment1')
     # Split the data into training and test sets. (0.75, 0.25) split.
     train, test = train_test_split(data)
-    
+
     #Predict PD
     train_x = train.drop(["PD"], axis=1)
     test_x = test.drop(["PD"], axis=1)
