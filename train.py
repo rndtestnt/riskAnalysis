@@ -11,6 +11,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 from sklearn.linear_model import lasso_path, enet_path
 filePath = "PD_Commercial_Train.csv"
+os.environ['MLFLOW_TRACKING_URI'] = 'http://localhost:5000'
+os.environ['GIT_PYTHON_REFRESH'] = 'quiet'
 
 df_credit = pd.read_csv(filePath)
 
